@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="timer-container">
+        <h1>🍳 Kitchen Timer</h1>
+        <p>Your perfect cooking companion</p>
+
+        <div class="timer-display">
+            <span id="minutes">00</span>:
+            <span id="seconds">00</span>
+        </div>
+
+        <div class="time-inputs">
+            <input type="number" id="inputMinutes"
+                   min="0" max="999" value="0"
+                   aria-label="Minutes">
+            <input type="number" id="inputSeconds"
+                   min="0" max="59" value="0"
+                   aria-label="Seconds">
+        </div>
+
+        <div class="controls">
+            <button id="startBtn">Start</button>
+            <button id="pauseBtn">Pause</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+
+        <h2>Quick Presets</h2>
+
+        <div class="presets">
+            <button data-time="180">🍵 3 min Tea</button>
+            <button data-time="600">🍚 10 min Rice</button>
+            <button data-time="1200">🍲 20 min</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
